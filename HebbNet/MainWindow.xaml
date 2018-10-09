@@ -1,0 +1,26 @@
+﻿<Window x:Class="HebbNet.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HebbNet"
+        mc:Ignorable="d"
+        Title="HebbNet" Height="585" Width="840" >
+    <Grid Margin="11,10,10,-4" RenderTransformOrigin="0.649,0.29">
+        <Label Margin="44,40,712.6,462.2" MaxWidth="120" MaxHeight="40" FontFamily="Microsoft Yi Baiti" FontSize="20" Content="x1"/>
+        <Label Margin="44,90,712.6,412.2" MaxWidth="120" MaxHeight="40" FontFamily="Microsoft Yi Baiti" FontSize="20" Content="x2"/>
+        <Label Margin="44,135,712.6,367.2" MaxWidth="120" MaxHeight="40" FontFamily="Microsoft Yi Baiti" FontSize="20" Content="b"/>
+        <Label Margin="244,40,512.6,462.2" MaxWidth="120" MaxHeight="40" FontFamily="Microsoft Yi Baiti" FontSize="20" Content="w1"/>
+        <Label Margin="244,90,512.6,412.2" MaxWidth="120" MaxHeight="40" FontFamily="Microsoft Yi Baiti" FontSize="20" Content="w2"/>
+        <Label Margin="244,135,511.6,367.2" MaxWidth="120" MaxHeight="40" FontFamily="Microsoft Yi Baiti" FontSize="20" Content="wb"/>
+        <Label Margin="464,90,291.6,412.2" MaxWidth="120" MaxHeight="40" FontFamily="Microsoft Yi Baiti" FontSize="20" Content="res"/>
+        <TextBox Name="TextBox_x1" Margin="98,40,580.6,473.2" ></TextBox>
+        <TextBox Name="TextBox_x2" Margin="98,90,579.6,423.2" ></TextBox>
+        <TextBox Name="TextBox_b" Margin="98,135,579.6,378.2" ></TextBox>
+        <TextBox Name="TextBox_w1" Margin="286,40,392.6,473.2" IsReadOnly="True"></TextBox>
+        <TextBox Name="TextBox_w2" Margin="285,90,392.6,423.2" IsReadOnly="True"></TextBox>
+        <TextBox Name="TextBox_wb" Margin="286,135,391.6,378.2" IsReadOnly="True" ></TextBox>
+        <TextBox Name="TextBox_res" Margin="524,90,152.6,423.2" IsReadOnly="True"></TextBox>
+        <Button Margin="261,244,365.6,249.2" Content="generate" Click="Button_Click" RenderTransformOrigin="0.51,1.544" />
+    </Grid>
+</Window>

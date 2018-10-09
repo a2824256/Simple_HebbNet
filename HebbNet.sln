@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2041
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HebbNet", "HebbNet\HebbNet.csproj", "{C5E33B85-96B0-4739-822C-81A3B8CDC2A3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5E33B85-96B0-4739-822C-81A3B8CDC2A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5E33B85-96B0-4739-822C-81A3B8CDC2A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5E33B85-96B0-4739-822C-81A3B8CDC2A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5E33B85-96B0-4739-822C-81A3B8CDC2A3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8F649C31-A1DF-429B-B68B-B33C31E33A03}
+	EndGlobalSection
+EndGlobal
