@@ -5,22 +5,36 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HebbNet"
         mc:Ignorable="d"
-        Title="HebbNet" Height="585" Width="840" >
-    <Grid Margin="11,10,10,-4" RenderTransformOrigin="0.649,0.29">
-        <Label Margin="44,40,712.6,462.2" MaxWidth="120" MaxHeight="40" FontFamily="Microsoft Yi Baiti" FontSize="20" Content="x1"/>
-        <Label Margin="44,90,712.6,412.2" MaxWidth="120" MaxHeight="40" FontFamily="Microsoft Yi Baiti" FontSize="20" Content="x2"/>
-        <Label Margin="44,135,712.6,367.2" MaxWidth="120" MaxHeight="40" FontFamily="Microsoft Yi Baiti" FontSize="20" Content="b"/>
-        <Label Margin="244,40,512.6,462.2" MaxWidth="120" MaxHeight="40" FontFamily="Microsoft Yi Baiti" FontSize="20" Content="w1"/>
-        <Label Margin="244,90,512.6,412.2" MaxWidth="120" MaxHeight="40" FontFamily="Microsoft Yi Baiti" FontSize="20" Content="w2"/>
-        <Label Margin="244,135,511.6,367.2" MaxWidth="120" MaxHeight="40" FontFamily="Microsoft Yi Baiti" FontSize="20" Content="wb"/>
-        <Label Margin="464,90,291.6,412.2" MaxWidth="120" MaxHeight="40" FontFamily="Microsoft Yi Baiti" FontSize="20" Content="res"/>
-        <TextBox Name="TextBox_x1" Margin="98,40,580.6,473.2" ></TextBox>
-        <TextBox Name="TextBox_x2" Margin="98,90,579.6,423.2" ></TextBox>
-        <TextBox Name="TextBox_b" Margin="98,135,579.6,378.2" ></TextBox>
-        <TextBox Name="TextBox_w1" Margin="286,40,392.6,473.2" IsReadOnly="True"></TextBox>
-        <TextBox Name="TextBox_w2" Margin="285,90,392.6,423.2" IsReadOnly="True"></TextBox>
-        <TextBox Name="TextBox_wb" Margin="286,135,391.6,378.2" IsReadOnly="True" ></TextBox>
-        <TextBox Name="TextBox_res" Margin="524,90,152.6,423.2" IsReadOnly="True"></TextBox>
-        <Button Margin="261,244,365.6,249.2" Content="generate" Click="Button_Click" RenderTransformOrigin="0.51,1.544" />
+        Title="HebbNet" Height="650" Width="850" >
+    <Grid Margin="6,10,7,0" RenderTransformOrigin="0.649,0.29" Height="607" VerticalAlignment="Top">
+        <DataGrid Name="DG1" Grid.Column="0" Grid.Row="0" ItemsSource="{Binding}" AutoGenerateColumns="False" Margin="0,10,0,327" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="X1" Width="50"  Binding="{Binding X1}"/>
+                <DataGridTextColumn Header="X2" Width="50" Binding="{Binding X2}" />
+                <DataGridTextColumn Header="B" Width="50" Binding="{Binding B}" />
+                <DataGridTextColumn Header="W1" Width="50" Binding="{Binding W1}" />
+                <DataGridTextColumn Header="W2" Width="50" Binding="{Binding W2}" />
+                <DataGridTextColumn Header="WB" Width="50" Binding="{Binding WB}" />
+                <DataGridTextColumn Header="Target" Width="50" Binding="{Binding Target}" />
+                <DataGridTextColumn Header="Type" Width="50" Binding="{Binding Type}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Margin="109,307,686,265" Width="34" FontFamily="Microsoft Yi Baiti" FontSize="20" Content="x1:" RenderTransformOrigin="-1.123,0.51" Height="35"/>
+        <Label Margin="109,374,686,198" Width="34" FontFamily="Microsoft Yi Baiti" FontSize="20" Content="x2:"/>
+        <Label Margin="109,439,686,133" Width="34" FontFamily="Microsoft Yi Baiti" FontSize="20" Content="b:" Height="35"/>
+        <Label Margin="347,307,448,265" Width="34" FontFamily="Microsoft Yi Baiti" FontSize="20" Content="w1:"/>
+        <Label Margin="348,374,447,198" Width="34" FontFamily="Microsoft Yi Baiti" FontSize="20" Content="w2:" RenderTransformOrigin="0.53,0.194"/>
+        <Label Margin="347,439,448,133" Width="34" FontFamily="Microsoft Yi Baiti" FontSize="20" Content="wb:" RenderTransformOrigin="0.449,-0.045"/>
+        <Label Margin="575,374,194,198" FontFamily="Microsoft Yi Baiti" FontSize="20" Content="target:"/>
+        <TextBox Name="TextBox_x1" Margin="142,307,535,265" Height="35" />
+        <TextBox Name="TextBox_x2" Margin="142,374,535,198" Height="35" ></TextBox>
+        <TextBox Name="TextBox_b" Margin="142,439,535,133" IsReadOnly="True"></TextBox>
+        <TextBox Name="TextBox_w1" Margin="380,307,297,265" IsReadOnly="True"/>
+        <TextBox Name="TextBox_w2" Margin="380,374,297,198" IsReadOnly="True"></TextBox>
+        <TextBox Name="TextBox_wb" Margin="380,439,297,133" IsReadOnly="True" ></TextBox>
+        <TextBox Name="TextBox_target" Margin="635,374,41,198"></TextBox>
+        <Button Margin="64,545,563,13" Content="Train" Click="Train" RenderTransformOrigin="0.51,1.544" />
+        <Button Margin="303,545,324,13" Content="Test" Click="Test" RenderTransformOrigin="0.51,1.544" />
+        <Button Margin="543,545,84,13" Content="Reset" Click="Reset" RenderTransformOrigin="0.51,1.544" />
     </Grid>
 </Window>
