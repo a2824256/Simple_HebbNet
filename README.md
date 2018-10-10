@@ -4,7 +4,7 @@ More infomation: http://web.mit.edu/mcraegroup/wwwfiles/ChuangChuang/thesis_file
 
 # Train
 Input X1, X2 and Y(Target). Then click the "Train" button. The weights will be changed.<br>
-Formula: weight[x] = weight[x] + input[x] × Y
+Formula: new_weight[x] = old_weight[x] + input[x] × Y
 
 # Test
 Just enter X1 and X2. Then click the "Test" button. The trained network will calculate the Y(target) based on input.
