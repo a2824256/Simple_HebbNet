@@ -1,6 +1,6 @@
 # HebbNet
 An early simple artificial neural network is used to understand the training and working principles of neural networks.You can understand the working principle of the neural network according to the truth table of the two gates below.<br>
-More infomation:http://web.mit.edu/mcraegroup/wwwfiles/ChuangChuang/thesis_files/Appendix%20D_Artificial%20Neural%20Network.pdf
+More infomation: http://web.mit.edu/mcraegroup/wwwfiles/ChuangChuang/thesis_files/Appendix%20D_Artificial%20Neural%20Network.pdf
 
 # Train
 Input X1, X2 and Y(Target). Then click the "Train" button. The weights will be changed.<br>
