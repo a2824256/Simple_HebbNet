@@ -11,7 +11,7 @@ Just enter X1 and X2. Then click the "Test" button. The trained network will cal
 # Network Structure
 ![image](https://github.com/a2824256/HebbNet/blob/master/HebbNet.jpg)
 
-# AND gate true table
+# AND gate truth table
 | X1    | X2    | Y     |
 | ----- | ----- | ----- |
 | 0     | 0     | 0     |
@@ -19,7 +19,7 @@ Just enter X1 and X2. Then click the "Test" button. The trained network will cal
 | 1     | 0     | 0     |
 | 1     | 1     | 1     |
 
-# OR gate true table
+# OR gate truth table
 | X1    | X2    | Y     |
 | ----- | ----- | ----- |
 | 0     | 0     | 0     |
