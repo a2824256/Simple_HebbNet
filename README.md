@@ -20,6 +20,5 @@ An early simple neural network is used to understand the training and working pr
 | 1     | 0     | 1     |
 | 1     | 1     | 1     |
 
-# Software View
+# Software View (Trainning the AND gate)
 ![image](https://github.com/a2824256/HebbNet/blob/master/View.png)
-Trainning the AND gate
