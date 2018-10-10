@@ -2,7 +2,8 @@
 An early simple neural network is used to understand the training and working principles of neural networks.You can understand the working principle of the neural network according to the truth table of the two gates below.
 
 # Train
-Input X1, X2 and Y(Target). Then click the "Train" button. The weights will be change.
+Input X1, X2 and Y(Target). Then click the "Train" button. The weights will be change.<br>
+Formula: weight[x] = weight[x] + input[x] × Y
 
 # Test
 Just enter X1 and X2. Then click the "Test" button. The trained network will calculate the Y(target) based on input.
