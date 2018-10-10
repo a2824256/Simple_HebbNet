@@ -8,7 +8,7 @@ An early simple neural network is used to understand the training and working pr
 ![image](https://github.com/a2824256/HebbNet/blob/master/View.png)
 
 # AND Gate true table
-<table border="1px" align="center" bordercolor="black" width="80%" height="100px">
+<table border="1px" align="center">
     <tr align="center">
         <td>X1</td>
         <td>X2</td>
