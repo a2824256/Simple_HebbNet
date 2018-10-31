@@ -82,7 +82,7 @@ namespace HebbNet
             {
                 this.input_x1 = Convert.ToInt32(TextBox_x1.Text.Trim());
                 this.input_x2 = Convert.ToInt32(TextBox_x2.Text.Trim());
-                this.target = ((this.input_x1 * this.weight_x1 + this.input_x2 * this.weight_x2 + input_b * this.weight_b) > 1) ? 1 : 0;
+                this.target = this.input_x1 * this.weight_x1 + this.input_x2 * this.weight_x2 + this.input_b * this.weight_b;
                 TextBox_target.Text = this.target.ToString();
                 TrainingRecords rec = new TrainingRecords();
                 rec.X1 = this.input_x1.ToString();
